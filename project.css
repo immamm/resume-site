@@ -47,7 +47,19 @@ li{
 li:hover{
     background-color: black;
 }
-
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: center;
+  align-content: space-around;
+}
+}
+.flex-container > div{
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+}
  th, td {
     border-radius: 25px;
     color: antiquewhite;
@@ -57,17 +69,10 @@ li:hover{
   table {
     border-spacing: 15px;
   }
-  .qb{
-    max-width: 50%;
-    float: left;
-
-  }
-  .table{
-    float: right;
-   max-width:50%;
-  }
+  
   .l{
     font-family: 'monserrat';
+      font-weight: lighter;
   }
   .its{
     margin: 30px 0 0 15px;
@@ -81,7 +86,19 @@ li:hover{
     background-color: blueviolet;
   }
   @media screen and (max-width: 480px) {
-    .links, .qb, .table, .its {float: none;
-    width: 100%;}
-    
+       .intro>p {
+    padding: 0 20px;
+  }
+    .links {
+    height: auto;
+    display: inline-block;    
+  }
+  
+  }
+@media screen and (min-width: 481px) {
+     .links {
+    margin-top: 100px;
+    height: 100px;
+  }
+  
   }
