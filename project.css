@@ -1,103 +1,146 @@
-body{
-    margin: 0;
-    background-image: url(https://img.freepik.com/free-photo/nice-day-with-blue-sky_1136-235.jpg?w=740&t=st=1660827492~exp=1660828092~hmac=fd6c7b5094b7ed1af5fd13fa2cee608b0be2f26a9599a563fb4e4051c54a574c);
-    
-    font-family: 'merriweather', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.h{
-    font-family: 'Sacramento';
-    text-align:center;
+body {
+  margin: 0;
+  background-image: url(https://img.freepik.com/free-photo/nice-day-with-blue-sky_1136-235.jpg?w=740&t=st=1660827492~exp=1660828092~hmac=fd6c7b5094b7ed1af5fd13fa2cee608b0be2f26a9599a563fb4e4051c54a574c);
+  font-family: 'merriweather', sans-serif;
 }
-h2{
-   color: aqua;
+
+.h {
+  font-family: 'Sacramento';
+  text-align: center;
 }
-h3{
-    color: #554994;
+
+h2 {
+  color: aqua;
 }
-.img{
-    float: left;
-    margin-right: 30px;
-    border-radius: 10px;
-    height: 250px;
-    width: auto;
+
+h3 {
+  color: #554994;
+}
+
+.img {
+  float: left;
+  margin-right: 30px;
+  border-radius: 10px;
+  height: 250px;
+  width: auto;
 
 }
-.links{
-    margin-top: 100px;
-    background-color: blanchedalmond;
-    width: auto;
-    height: 100px;
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
 }
-ul{
+
+.box {
+  flex: 1;
+  background: #3474e6;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+
+.box i {
+  margin-right: 10px;
+}
+
+/*
+.links {
+  background-color: blanchedalmond;
+  width: auto;  
+}
+
+ul {
   list-style-type: none;
-    float: left;
-    padding: 5px;
-    margin-left: 15px;
-}
-ol{
-    list-style-type: none;
-    float: right;
-    margin: 0 20px 50px 0;
-    padding: 10px;
-}
-li{
-    text-decoration-color: aqua;
+  padding: 5px;
+  margin-left: 15px;
 }
 
-li:hover{
-    background-color: black;
+ol {
+  list-style-type: none;
+  float: right;
+  margin: 0 20px 50px 0;
+  padding: 10px;
 }
+
+li {
+  text-decoration-color: aqua;
+}
+
+li:hover {
+  background-color: black;
+}
+*/
 .flex-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
+  flex-direction: row;
+
 }
+.flex-item-l{
+  flex: 50%;
+padding: 10px;
 }
-.flex-container > div{
-  width: 100px;
-  margin: 10px;
+.flex-item-r{
+  flex: 50%;
+padding: 10px;
+}
+th,
+td {
+  border-radius: 25px;
+  color: antiquewhite;
+  background-color: #554994;
   text-align: center;
 }
- th, td {
-    border-radius: 25px;
-    color: antiquewhite;
-    background-color: #554994;
-    text-align: center;
-  }
-  table {
-    border-spacing: 15px;
-  }
-  
-  .l{
-    font-family: 'monserrat';
-      font-weight: lighter;
-  }
-  .its{
-    margin: 30px 0 0 15px;
-  }
-  span{
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 10px;
-    color: aliceblue;
-    background-color: blueviolet;
-  }
-  @media screen and (max-width: 480px) {
-       .intro>p {
+
+table {
+  border-spacing: 15px;
+}
+
+.l {
+  font-family: 'monserrat';
+}
+
+.its {
+  margin: 30px 0 0 15px;
+}
+
+span {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: aliceblue;
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 480px) {
+
+  .intro>p {
     padding: 0 20px;
   }
-    .links {
-    height: auto;
-    display: inline-block;    
-  }
   
+  .links {
+    height: auto;
+    display: inline-block;
   }
+  .flex-container{
+    flex-direction: column;
+
+
+}
+}
+
 @media screen and (min-width: 481px) {
-     .links {
+
+
+  .links {
     margin-top: 100px;
     height: 100px;
   }
-  
-  }
+
+}
