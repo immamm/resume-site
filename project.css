@@ -25,7 +25,7 @@ h3 {
 .img {
   float: left;
   margin-right: 30px;
-  border-radius: 10px;
+  clip-path: circle();
   height: 250px;
   width: auto;
 
